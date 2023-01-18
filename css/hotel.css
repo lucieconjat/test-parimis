@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Roboto&display=swap');
+
+/* Style global*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant', serif;
+    letter-spacing: 0.4px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    font-weight: 550;
+    background-color: #CFB581;
+    border-radius: 66px;
+    padding: .5em 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+    background-color: #b8a174 ;
+    color: white;
+    font-weight: 550;
+    border-radius: 66px;
+}
+
+/* Style Header */
+
+header {
+    padding: 15px 0 0 30px;
+	position: absolute;
+	width: 100%;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* pour retour à la ligne sur version mobile */
+    justify-content: left;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    display: inline-block;
+    padding: .5em 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu a:hover {
+    color: #b8a174;
+}
+
+.menu .accueil {
+    padding: 0 30px 0 100px;
+}
+
+.menu .button {
+    margin: 0 0 0 350px;
+}
+
+.menu .button:hover {
+    color: white;
+}
+
+/* Style Banner */
+
+.banner {
+    padding: 68px 0 20px 0;
+}
+
+.banner .container {
+    background-image: url(../img/flower.jpg);
+    width:100%;
+    max-height: 90vh;
+    min-width: 100vh;
+    background-position: center center;
+	background-size: cover;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 240px;
+    color: white;
+    margin-bottom: 700px;
+}
+
+/* Style général présentation */
+
+h2 {
+    font-size: 30px;
+    padding: 5px 0 30px 0;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 0 65px 0 0;
+}
+
+.texte {
+    width: 30%;
+}
+
+.img {
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin: 30px 0 40px 0;
+}
+
+.presentation .button {
+text-align: center;
+margin: 30px 195px 0 115px;
+}
+
+/* Hotel */
+
+.hotel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hotel .texte {
+    padding-top: 40px;
+}
+
+.reserver {
+    margin: 50px 0 130px 0;
+}
+
+/* Style footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EBE3D3;
+    padding: 25px 0 0 0;
+}
+
+footer ul {
+	display: flex;
+	margin-bottom: 15px;
+	font-size: 35px;
+}
+
+footer ul li {
+	margin: 0 8px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	margin-bottom: 13px;
+    margin-left: 58px;
+}
+
+footer p a:hover, footer ul a:hover {
+	color: rgba(0, 0, 0, 0.514)
+}

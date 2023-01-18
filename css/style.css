@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Roboto&display=swap');
+
+/* Style global*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant', serif;
+    letter-spacing: 0.4px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    font-weight: 550;
+    background-color: #CFB581;
+    border-radius: 66px;
+    padding: .5em 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+    background-color: #b8a174 ;
+    color: white;
+    font-weight: 550;
+    border-radius: 66px;
+}
+
+/* Style Header */
+
+header {
+    padding: 15px 0 0 30px;
+	position: absolute;
+	width: 100%;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* pour retour à la ligne sur version mobile */
+    justify-content: left;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    display: inline-block;
+    padding: .5em 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu a:hover {
+    color: #b8a174;
+}
+
+.menu .accueil {
+    padding: 0 30px 0 100px;
+}
+
+.menu .button {
+    margin: 0 0 0 350px;
+}
+
+.menu .button:hover {
+    color: white;
+}
+
+/* Style Banner */
+
+.banner {
+    padding: 68px 0 60px 0;
+}
+
+.banner .container {
+    background-image: url(../img/view.jpg);
+    justify-content: center;
+    min-width: 100vh;
+    height: 90vh;
+    background-position: center center;
+	background-size: cover;
+}
+
+.logo {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/* Style général présentation */
+
+h2 {
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 0 65px 0 0;
+}
+
+.texte {
+    width: 30%;
+}
+
+.img {
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 65px;
+}
+
+.presentation .button {
+text-align: center;
+margin: 40px 195px 0 115px;
+}
+
+/* Hotel */
+
+.hotel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hotel h2 {
+    margin-top: -10px;
+}
+
+/* Chambres */
+
+.chambres {
+    margin: 60px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #EBE3D3;
+}
+
+.chambres .button {
+    margin: 40px 130px 83px 115px;
+}
+
+.chambres p, .chambres h2 {
+    margin-left: 73px;
+}
+
+.chambres h2 {
+    margin-top: 50px;
+}
+
+.chambres .texte {
+    width: 33%;
+    margin-bottom: 25px;
+}
+
+.chambres img {
+    margin-top: 65px;
+    margin-bottom: 160px;
+}
+
+/* Restaurant*/
+
+.restaurant {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.restaurant p, .restaurant h2 {
+    margin-left: 20px;
+    margin-right: 13px;
+}
+
+.restaurant .button {
+    margin: 40px 180px 83px 115px;
+}
+
+/* Spa*/
+
+.spa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #EBE3D3;
+}
+
+.spa .texte {
+    margin-bottom: 8px;
+}
+
+.spa h2 {
+    margin-top: 45px; 
+}
+
+/* Carte */
+
+.carte h2 {
+    font-size: 40px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.infos p {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.map {
+    width: 1000px;
+    height: 300px;
+    margin: 30px 63px 63px;
+}
+
+.fa-map-marker-alt, .fa-phone-alt {
+    padding-right: 15px;
+}
+
+
+/* Style Newsletter */
+
+.newsletter {
+    background-color: #EBE3D3;
+    padding: 55px 0 85px;
+}
+
+.form {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.form h3 {
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.form p {
+    font-family: 'Roboto', sans-serif;
+    padding: 18px 0 50px;
+}
+
+.border {
+    background-color: #EBE3D3;
+    border-style: solid;
+    border-width: 3px;
+    width: 50%;
+    border-color: white;
+}
+
+.newsletter form input {
+	padding: 25px 350px 25px 40px;
+	font-size: 18px;
+    font-family: 'cormorant', serif;
+	color: black;
+    background-color: #EBE3D3;
+    border-style: none;
+}
+
+.abonnement {
+	font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+.abonnement:hover {
+	color: rgba(0, 0, 0, 0.514);
+}
+
+/* Style footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EBE3D3;
+    padding: 25px 0 0 0;
+}
+
+footer ul {
+	display: flex;
+	margin-bottom: 15px;
+	font-size: 35px;
+}
+
+footer ul li {
+	margin: 0 8px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	margin-bottom: 13px;
+    margin-left: 58px;
+}
+
+footer p a:hover, footer ul a:hover {
+	color: rgba(0, 0, 0, 0.514)
+}
+
+
+/* On gere le responsive pour les devices de < 1024px */
+@media screen and (max-width: 1024px) {
+	section {
+		padding: 90px 30px;
+	}
+}
+
+/* On gere le responsive pour les devices de < 768px */
+@media screen and (max-width: 768px) {
+	header {
+		z-index: 1;
+	}
+
+    .main-nav {
+        width: 100%;
+        height: auto;
+    }
+	
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.6s;
+    	-moz-transition: max-height 0.6s;
+        -ms-transition: max-height 0.6s;
+        -o-transition: max-height 0.6s;
+    	transition: max-height 0.6s;
+		/* pour faire pop le menu depuis la gauche > remplacer max-height par max-width */
+		/* pour faire sortir le menu depuis la droite > ajouter un float: right */
+		background-color: #001a21;
+		margin-top: 10px;
+    }
+	
+    .menu li {
+        text-align: left;
+		padding: 10px; 
+		border-bottom: 1px solid #fff;
+        display: block;
+    }
+    
+	.main-nav ul li:last-child {
+		border:none;
+	}
+	
+    .menu-icon {
+		width: 50px;
+		height: inherit;
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 0;
+    }
+	
+    #menuToggle:checked ~ ul {
+        max-height: 270px;
+        /* max-width: 350px; On replace aussi ici le max-heght par le max-width */ 
+    }
+	
+    .menu-icon i {
+        font-size: 1.7em;
+		color: #fff;
+    }
+	
+	section {
+		padding: 90px 40px;
+	}
+	
+	section h3.title {
+		font-size: 50px;
+	}
+	
+	.banner h1 {
+		font-size: 100px;
+	}
+
+	.banner h2 {
+		font-size: 16px;
+	}
+	
+	.services {
+		margin-bottom: 65px;
+        flex-basis: 50%;
+	}
+	
+	.newsletter form input, .contact form input {
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+	
+
+}
